@@ -77,6 +77,12 @@ There should be a Read/Write lock and nodes (predicates and rules) shall be able
 * Read - a read lock is implicitly acquired and released.
 * Write - a write lock is implicitly acquired and released.
 
+### Probabilistic reasoning
+
+One intereting feature to implement is to provide support for fact and conclusion probabilities and computing conclusion probabilities from derivation trees and source facts probabilities. 
+E.g. if there is 50% probability that Joe is Jim's colleague and 50% probability that Jane is Jim's colleague then there is 25% probability that Joe is Jane's colleague.
+Support of probabilities would allow to build rule sets with AI rules. E.g. an image recognition "rule" taking an image fact and producing a conclusion "Cat, 80%".
+
 ## Reporting
 
 * Rules documentation with help context referencing the metamodel documentation
